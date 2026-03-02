@@ -1,132 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Emelie Hörnfeldt – DevOps Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Emelie Hörnfeldt — DevOps Portfolio</title>
 
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #0f172a;
-      color: #e5e7eb;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+/* — GLOBAL — */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9fafb;
+    color: #1e1e1e;
+}
 
-    header {
-      background-color: #020617;
-      padding: 40px;
-      text-align: center;
-      border-bottom: 2px solid #22c55e;
-    }
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
 
-    header h1 {
-      color: #22c55e;
-      margin: 0;
-      font-size: 2.5rem;
-    }
+/* — HEADER — */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #2d6cdf;
+    padding-bottom: 20px;
+}
 
-    header p {
-      color: #93c5fd;
-      font-size: 1.1rem;
-      margin-top: 10px;
-    }
+.header h1 {
+    font-size: 30px;
+    margin: 0;
+}
 
-    main {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
+.header .subtitle {
+    color: #2d6cdf;
+    font-size: 18px;
+    font-weight: 500;
+}
 
-    h2 {
-      color: #22c55e;
-      margin-top: 40px;
-    }
+.contact a {
+    color: #2d6cdf;
+    text-decoration: none;
+    margin-right: 12px;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
 
-    ul {
-      line-height: 1.8;
-    }
+/* — SECTIONS — */
+section {
+    margin-top: 40px;
+}
 
-    footer {
-      margin-top: 60px;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #94a3b8;
-      border-top: 1px solid #1e293b;
-    }
+section h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #2d6cdf;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+}
 
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-  </style>
+/* — SKILLS — */
+.skills span {
+    display: inline-block;
+    background: #eef3ff;
+    color: #2d6cdf;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin: 4px 6px 4px 0;
+    font-size: 13px;
+}
+
+/* — PROJECTS — */
+.project-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px 18px;
+    margin-bottom: 20px;
+    transition: 0.2s ease;
+}
+.project-card:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    margin: 0;
+    font-size: 17px;
+    color: #2d6cdf;
+}
+
+.project-card p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.project-card a {
+    font-size: 13px;
+    color: #2d6cdf;
+}
+
+/* — EXPERIENCE — */
+.experience-item {
+    margin-bottom: 18px;
+}
+.experience-item p {
+    margin: 4px 0;
+}
+
+/* — FOOTER — */
+footer {
+    margin-top: 60px;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
+    color: #555;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Emelie Hörnfeldt</h1>
-  <p>Junior DevOps Engineer · AWS · Linux · Terraform · Git</p>
-</header>
+<div class="container">
 
-<main>
+<div class="header">
+    <div>
+        <h1>Emelie Hörnfeldt</h1>
+        <div class="subtitle">DevOps Engineer | Cloud & Automation</div>
+        <div class="contact">
+            <a href="mailto:emelieh.devops@gmail.com">emelieh.devops@gmail.com</a>
+            <a href="https://github.com/emeliehfeldt-byte" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/DIN-LÄNK" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</div>
 
-  <h2>🚀 DevOps Portfolio</h2>
-  <p>
-    This project demonstrates cloud infrastructure deployment using 
-    <strong>AWS EC2</strong>, <strong>Nginx</strong>, and 
-    <strong>Amazon Linux 2023</strong>.
-  </p>
+<section id="profile">
+    <h2>Profile</h2>
+    <p>
+        DevOps Engineer graduating 2026 with practical experience in AWS, Linux and CI/CD pipelines.
+        Passionate about cloud infrastructure, automation, and building scalable systems. Strong analytical
+        mindset with a focus on data-driven optimization and continuous improvement.
+    </p>
+</section>
 
-  <h2>🛠 Technical Skills Demonstrated</h2>
-  <ul>
-    <li>AWS EC2 provisioning</li>
-    <li>Security Groups configuration (SSH & HTTP)</li>
-    <li>Linux server administration</li>
-    <li>Nginx web server setup</li>
-    <li>Infrastructure as Code using Terraform</li>
-    <li>Git & GitHub workflow</li>
-  </ul>
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>AWS</span><span>EC2</span><span>S3</span><span>IAM</span><span>VPC</span>
+        <span>GitHub Actions</span><span>Docker</span><span>Linux</span><span>Bash</span><span>Python</span>
+        <span>Git</span><span>Networking</span>
+    </div>
+</section>
 
-  <h2>🎓 Education</h2>
-  <p>
-    DevOps Engineer – Level 3<br>
-    Jensen Education
-  </p>
+<section id="projects">
+    <h2>Projects</h2>
 
-  <h2>🔗 Professional Links</h2>
-  <ul>
-    <li>
-      GitHub: 
-      <a href="https://github.com/emeliehfeldt-byte" target="_blank">
-        github.com/emeliehfeldt-byte
-      </a>
+    <div class="project-card">
+        <h3>AWS Cloud Deployment</h3>
+        <p>Provisioned EC2 infrastructure, implemented CI/CD with GitHub Actions, and deployed an application
+            in a Linux environment.</p>
+        <a href="https://github.com/emeliehfeldt-byte/emelie-devops">View on GitHub →</a>
+    </div>
 
-    </li>
-  </ul>
-<h2>📄 CV</h2>
-<p>
-  <a href="CV.Emelie.html" target="_blank">
-    View my CV
-  </a>
-</p>
-  <h2>📌 Professional Reference</h2>
-  <p>
-    Najmaddin Mustafa<br>
-    DevOps Instructor – Jensen Education<br>
-    Email: 
-    <a href="mailto:najmaddin.mustafa@jenseneducation.se">
-      najmaddin.mustafa@jenseneducation.se
-    </a>
-  </p>
+</section>
 
-</main>
+<section id="experience">
+    <h2>Experience</h2>
+
+    <div class="experience-item">
+        <p><strong>IT Procurement Administrator</strong>, Advania (2022–2024)</p>
+        <p>Managed IT hardware lifecycle, improved internal workflows and maintained system reporting.</p>
+    </div>
+
+    <div class="experience-item">
+        <p><strong>Quality Analyst</strong>, Teleperformance (2020–2022)</p>
+        <p>Analyzed KPIs, identified inefficiencies and optimized reporting processes.</p>
+    </div>
+
+    <div class="experience-item">
+        <p><strong>Team Leader</strong>, Teleperformance / Klarna (2015–2020)</p>
+        <p>Led support teams, trained new staff and handled 500+ cases weekly.</p>
+    </div>
+
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <p><strong>DevOps Engineer Program</strong>, Jensen Education — Graduation 2026</p>
+</section>
 
 <footer>
-  <p>© 2026 · Emelie Hörnfeldt · DevOps Portfolio</p>
+    © 2026 • Emelie Hörnfeldt — DevOps Engineer
 </footer>
+
+</div>
 
 </body>
 </html>
